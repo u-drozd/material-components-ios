@@ -16,7 +16,6 @@
 		5D090E571C9AEB8D0061344A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D090E341C9AEB8C0061344A /* Localizable.strings */; };
 		64307B3C1DF74FEF004AE4AC /* MDCActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64307B3B1DF74FEF004AE4AC /* MDCActionViewController.m */; };
 		64307B3F1DF74FEF004AE4AC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64307B3D1DF74FEF004AE4AC /* MainInterface.storyboard */; };
-		64307B431DF74FEF004AE4AC /* MDCActionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 64307B381DF74FEF004AE4AC /* MDCActionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		64307B4A1DF76198004AE4AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64307B491DF76198004AE4AC /* Assets.xcassets */; };
 		64F6D8811F91522A00AA4B24 /* MDCCatalogDebugAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6D8801F91522A00AA4B24 /* MDCCatalogDebugAlert.swift */; };
 		64F6D8831F915CA600AA4B24 /* MDCDebugSafeAreaInsetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F6D8821F915CA600AA4B24 /* MDCDebugSafeAreaInsetsView.swift */; };
@@ -32,16 +31,6 @@
 		DEF64EA41C8DEE83007C4EA0 /* MDCCatalogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF64EA31C8DEE83007C4EA0 /* MDCCatalogCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		64307B411DF74FEF004AE4AC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 664524AB1C6BA62A001ADBF8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 64307B371DF74FEF004AE4AC;
-			remoteInfo = MDCActionExtension;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		64307B471DF74FEF004AE4AC /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -49,7 +38,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				64307B431DF74FEF004AE4AC /* MDCActionExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +275,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				64307B421DF74FEF004AE4AC /* PBXTargetDependency */,
 			);
 			name = MDCCatalog;
 			productName = MDCCatalog;
@@ -306,9 +293,8 @@
 				TargetAttributes = {
 					64307B371DF74FEF004AE4AC = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = EQHXZ8M8AV;
 						LastSwiftMigration = 0810;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					664524B21C6BA62A001ADBF8 = {
 						CreatedOnToolsVersion = 7.3;
@@ -499,14 +485,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		64307B421DF74FEF004AE4AC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 64307B371DF74FEF004AE4AC /* MDCActionExtension */;
-			targetProxy = 64307B411DF74FEF004AE4AC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		5D090E341C9AEB8C0061344A /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -578,11 +556,13 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = EQHXZ8M8AV;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MDCActionExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.google.mdc-catalog.MDCActionExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -598,11 +578,13 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = EQHXZ8M8AV;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MDCActionExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.google.mdc-catalog.MDCActionExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
